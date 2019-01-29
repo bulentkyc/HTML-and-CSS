@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML 5 Elements Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style rel="stylesheet" type="text/css">
+    /*
+        all aside tags will be same
+    */
+        aside{
+            background-color: beige;
+        }
+
+        
+    /*
+       styles all ul elements after the .post-header class
+    */
+        .post-header~ul {
+            color: red;
+        }
+
+    /*
+       styles all ul elements inside of the nav tags
+    */
+        nav>ul{
+            color:blue;
+        }
+    /*
+       styles elements with a spesific attribute
+    */
+    [bulent]{
+        background-color: aqua;
+    }
+
+    
+
+    /*
+       This selects elements with ending same attributes
+    */
+    div[bulent$=cloud]{
+        border: 10px solid brown;
+    }
+
+    div[bulent^=cloud]{
+        border: 10px solid yellow;
+    }
+
+    div[bulent~=cloud]{
+        border: 10px solid yellow;
+    }
+
+    div[bulent=cloud]{
+        border: 10px solid blue;
+    }
+
+    [lang|=ar]{
+        color: red;
+    }
+
+    [class|=ab]{
+        color: red;
+    }
+
+    /*
+       This selects elements with ending same attributes
+    */
+    div[bulent*=loud]{
+        border: 10px solid red;
+    }
+
+    .padding10px{
+        padding: 10px;
+    }
+
+    .rounded-border{
+        border-radius: 20%;
+        border: 10px solid green;
+    }
+
+    .center-align{
+        text-align: center;
+        width: 200px;
+    }
+
+    [special-style]{
+        border: 1px solid black;
+        display: inline;
+        width: 200px;
+    }
+
+    [inline]{
+        display:inline;
+    }
+
+    [main-1]{
+        width: 100%;
+        display: block;
+    }
+    [main-2]{
+        display: block;
+    }
+
+    [child-1]{
+        background-color: aqua;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    [child-2]{
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+
+        display: inline-block;
+    }
+
+    [child-3]{
+        background-color: green;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        display: inline-block;
+    }
+
+    [child-4]{
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+
+        display: inline-block;
+    }
+
+    
+    </style>
+</head>
+<!--header tag starts from here
+        this creates header part of the page -->
+<header>
+<nav class="class1 class2 rounded-border">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+</header>
+<body>
+<div main-1>
+    <div main-2>
+        <div child-1></div>
+        <div child-2></div>
+        <div child-3>
+        </div>
+        <div child-4></div>
+    </div>
+</div>
+
+    <!--article tag starts from here
+        article tag is using for  posts or some seperated blocks-->
+
+    <article bulent>
+        <h1>This is my article!</h1>
+        <p>Welcome to my class'es exercise page &#x1f601;</p>
+    </article>
+    
+    <!--aside tag starts from here
+        aside tag is using for create seperated blocks-->
+    <div bulent="hgvh g1cloud">
+        <p>
+            this is first paragraph.
+        </p>
+        <aside>
+            <p>
+                This is extra!
+            </p>
+        </aside>
+        <div bulent="dsfs cloud ysdfsd sdfgsdf">
+        <p>
+            this is second one!
+        </p>
+    </div>
+        <aside>
+            this is also extra!
+        </aside>
+    </div>
+    <div class="post-header">
+
+
+    </div>
+    <p></p>
+    <!--bdi tag starts from here
+        this saves the text-->
+        <div bulent="cloudair">
+    <ul>
+        <li>User: <bdi>Bülent</bdi>/ 90 points</li>
+        <li>User: <bdi>諡號</bdi>/ 80 points</li>
+        <!--bdi tag starts from here
+            this shown every time in the center-->
+        <dialog open> Hello World :))</dialog>
+        <!--dialog ends here-->
+        <li>User: <bdi>أحمد‎</bdi>/ 100 points</li>
+    </ul>
+</div>
+    
+
+    <p></p>
+
+    <!--details tag starts from here
+        this creates collapsable area-->
+    <details open class="center-align">
+        <summary>Click here to see more!</summary>
+        <p>This is normally hidden</p>
+        <p>But now you can see &#x1f601;</p>
+    </details>
+
+    <ul>
+            <li>User: <bdi>Bülent</bdi>/ 90 points</li>
+            <li>User: <bdi>諡號</bdi>/ 80 points</li>
+            <!--bdi tag starts from here
+                this shown every time in the center-->
+            <dialog open> Hello World :))</dialog>
+            <!--dialog ends here-->
+            <li>User: <bdi>أحمد‎</bdi>/ 100 points</li>
+        </ul>
+
+    <p>Please click up not</p>
+
+    <!--figure tag starts from here
+        this covers the image and information-->
+    <figure>
+        <img src="https://camo.githubusercontent.com/5215e6fe0e2fc740eb8d91fe380287294fcacca5/68747470733a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f79616b746f6361742e706e67">
+        <figcaption>This is very cute cat :)</figcaption>
+    </figure>
+
+     <!--meter tag starts from here
+        this converts percentage to gauge -->
+    <p>Subject Progress</p>
+    <p>
+        HTML: <meter  low="70" high="80" max="100" value="90"></meter><br>
+        CSS__: <meter value="0.3"></meter>
+    </p>
+
+    <progress value="40" max="100"></progress>
+
+
+    <div  class="rounded-border center-align">
+        <p inline lang="en">Hi</p>
+        <p lang="sp">Hola</p>
+        <p lang="ar">مرحبا</p>
+        <p lang="rs" class="padding10px">Priviet</p>
+        <p lang="it ">Ciao</p>
+        <p class="rounded-border center-align" lang="pl">cześć</p>
+        <p lang="gr">Hallo</p>
+        <p lang="ch">你好</p>
+        <p lang="ar-tr">Merhaba</p>
+        <p lang="pr">سلام</p>
+        <p lang="in">नमस्ते</p>
+        <p lang="fr">Salut</p>
+    </div>
+
+    <div special-style>
+            <p class="ab">Hi</p>
+            <p class="ab-cd">Hola</p>
+            <p class="ab-cd-ef">مرحبا</p>
+            <p class="rs">Priviet</p>
+            <p class="it ">Ciao</p>
+            <p class="pl">cześć</p>
+            <p class="gr">Hallo</p>
+            <p class="ch">你好</p>
+            <p class="ar-tr">Merhaba</p>
+            <p class="pr">سلام</p>
+            <p class="in">नमस्ते</p>
+            <p class="fr">Salut</p>
+        </div>
+    
+
+</body>
+ <!--footer tag starts from here
+        this creates footer part of the page -->
+<footer>
+    <p>
+        &copy; FBW 6 - 2019
+    </p>
+    <p>
+        paragraph 2
+    </p>
+    <p>
+        paragraph 3
+
+    </p>
+</footer>
+<p>
+    paragraph 4
+</p>
+</html>
+

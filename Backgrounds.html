@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bacground Styles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style rel="stylesheet" type="text/css">
+    body{
+        background-color: whitesmoke;
+    }
+        div{
+            width: 60%;
+            margin-left: 20%;
+            height: 200px;
+            border: 10px solid rgba(28, 46, 245, 0.457);
+        }
+        h1{
+            text-align: center;
+        }
+        .blue-bg{
+            background-color: blue;
+        }
+
+        .hex-fav-bg{
+            background-color: #A569BD;
+        }
+
+        .rgb-fav-bg{
+            background-color: rgb(247, 220, 111);
+        }
+
+        .transparent-bg{
+            background-color: transparent;
+        }
+
+        .image-bg{
+            background-image: url('http://lorempixel.com/1000/1000/people');
+        }
+
+        .image-bg-comp{
+            background-image: url('../../rest2.jpeg');
+        }
+
+        .img-bg-gradient{
+            background-image:   linear-gradient(black, gold,red);
+        }
+
+        .img-bg-gradient-tr{
+            background-image: linear-gradient(to right, black, gold,red)
+        } 
+
+        .img-bg-gradient-trb{
+            background-image: linear-gradient(to right bottom, black, gold,red)
+        } 
+
+        .img-bg-gradient-30deg{
+            background-image: linear-gradient(30deg, black, gold,red)
+        } 
+
+        .img-bg-gradient-0deg{
+            background-image: linear-gradient(0deg, black, gold 10%,red 140%)
+        } 
+
+        .img-bg-gradient-rainbow{
+            background-image: linear-gradient(to right,
+             violet, indigo,brown,green,blue, yellow,orange,red)
+        } 
+
+        .img-bg-rad-grad{
+            background-image: radial-gradient(black, gold, red);
+        }
+
+        .img-bg-rad-grad-wg{
+            background-image: radial-gradient(black 5%, gold 70%, red 25%);
+        }
+
+        .img-bg-rad-grad-circle{
+            background-image: radial-gradient(circle, black, gold,red);
+        }
+
+        .img-bg-rad-grad-origin{
+            background-image: radial-gradient(closest-side at 70% 55%, black, gold,red);
+        }
+
+        .img-bg-rad-grad-fs{
+            background-image: radial-gradient(farthest-side at 70% 55%, black, gold,red);
+        }
+
+        .img-bg-rad-grad-cc{
+            background-image: radial-gradient(closest-corner at 70% 55%, black, gold,red);
+        }
+
+        .img-bg-rad-grad-fc{
+            background-image: radial-gradient(farthest-corner at 70% 55%, black, gold,red);
+        }
+
+        .img-bg-rep-rad-grad{
+            background-image: repeating-radial-gradient(black, gold 10%,red 15%);
+        }
+
+        .img-bg-rep-lin-grad{
+            background-image: repeating-linear-gradient(black, gold 10%,red 15%);
+        }
+
+        .expand{
+            height: 400px;
+            width: 150%;
+            border: none;
+        }
+        .img-bg-web{
+            background-image: url('http://lorempixel.com/100/200/city');
+        }
+
+        .fixed{
+            background-attachment: fixed;
+        }
+
+        .scroll{
+            background-attachment: scroll;
+        }
+
+        .local{
+            background-attachment: local;
+
+            overflow-y:scroll;
+            overflow-x: hidden;
+        }
+
+        .bg-clip-bb{
+            background-clip: border-box;
+        }
+        
+        .bg-clip-pb{
+            background-clip: padding-box;
+            background-repeat: no-repeat;
+        }
+
+        .bg-clip-cb{
+            padding: 20px;
+            background-clip: content-box;
+        }
+
+        .bg-blue{
+            background-color: blue;
+        }
+
+
+        .bg-origin-bb{
+            background-origin: border-box;
+            background-repeat: no-repeat;
+        }
+        
+        .bg-origin-pb{
+            background-origin: padding-box;
+
+            background-repeat: no-repeat;
+        }
+
+        .bg-origin-cb{
+            padding: 20px;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+        }
+
+        .bg-rp-rp{
+            background-repeat:repeat;
+        }
+
+        .bg-rp-rp-x{
+            background-repeat:repeat-x;
+        }
+        .bg-rp-rp-y{
+            background-repeat:repeat-y;
+        }
+
+        .bg-rp-space{
+            background-repeat:space;
+        }
+
+        .bg-rp-round{
+            background-repeat:round;
+        }
+
+        .bg-ps-dr{
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+
+        .bg-ps-ps{
+            background-repeat: no-repeat;
+            background-position: 30% 50% ;
+        }
+
+        .bg-ps-px{
+            background-repeat: no-repeat;
+            background-position: 30px 50px ;
+        }
+
+        .bg-bonus {
+            border: solid 2.5em #000;
+            border-image: repeating-linear-gradient(45deg, 
+                    #4ca454, #4ca454 2%, 
+                    transparent 2%, transparent 5%) 40;
+            background: url(http://lorempixel.com/100/120/nature), 
+                url(http://lorempixel.com/100/120/city) 100% 100%;
+            background-repeat: no-repeat;
+            background-size: 50% 50%;
+            background-origin: border-box;
+            }
+
+        .bg-sz-auto{
+            background-size: auto;
+            background-repeat: no-repeat;
+        }
+
+        .bg-sz-wh{
+            background-size: 40px 40%;
+            background-repeat: no-repeat;
+        }
+
+        .bg-sz-pc{
+            background-size: 40%;
+            background-repeat: no-repeat;
+        }
+
+        .bg-sz-cvr{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bg-sz-cnt{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .bg-together{
+            background: url('http://lorempixel.com/100/200/city') 50px 50px no-repeat;
+        }
+
+        .enterance{
+            width: 100vw;
+            height: 100vh;
+            background-image: url('../../enterance.jpeg');
+            border: none;
+            margin: 0;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        body{
+            padding:0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="enterance">
+
+    </div>
+    <h1>Background Colors</h1>
+    <h1>Background-color: blue</h1>
+    <div class="blue-bg"></div>
+
+    <h1>Background-color: hex - #A569BD</h1>
+    <div class="hex-fav-bg"></div>
+
+    <h1>Background-color: rgb - rgb(247, 220, 111)</h1>
+    <div class="rgb-fav-bg"></div>
+    
+    <h1>Background-color: transparen/initial/nothingt</h1>
+    <div class="transparent-bg"></div>
+
+    <hr>
+    <h1>Background Images</h1>
+
+    <h1>Background-image: from web </h1>
+    <div class="image-bg"></div>
+
+    <h1>Background-image: from computer </h1>
+    <div class="image-bg-comp"></div>
+
+    <h1>Background-image: gradient </h1>
+    <div class="img-bg-gradient"></div>
+    
+    <h1>Background-image: gradient to right </h1>
+    <div class="img-bg-gradient-tr"></div>
+
+    <h1>Background-image: gradient to right-bottom </h1>
+    <div class="img-bg-gradient-trb"></div>
+
+    <h1>Background-image: gradient to 30deg </h1>
+    <div class="img-bg-gradient-30deg"></div>
+
+    <h1>Background-image: gradient to 0deg </h1>
+    <div class="img-bg-gradient-0deg"></div>
+
+    <h1>Background-image: gradient rainbow </h1>
+    <div class="img-bg-gradient-rainbow"></div>
+
+    <hr>
+
+    <h1>Background-image: radial-gradient  </h1>
+    <div class="img-bg-rad-grad"></div>
+
+    <h1>Background-image: radial-gradient with different weights   </h1>
+    <div class="img-bg-rad-grad-wg"></div>
+
+    <h1>Background-image: radial-gradient with circle shape   </h1>
+    <div class="img-bg-rad-grad-circle"></div>
+
+    <h1>Background-image: radial-gradient with closest-side   </h1>
+    <div class="img-bg-rad-grad-origin"></div>
+
+    <h1>Background-image: radial-gradient with farthest side   </h1>
+    <div class="img-bg-rad-grad-fs"></div>
+
+    <h1>Background-image: radial-gradient with closet corner   </h1>
+    <div class="img-bg-rad-grad-cc"></div>
+
+    <h1>Background-image: radial-gradient with farthest corner   </h1>
+    <div class="img-bg-rad-grad-fc"></div>
+
+    <h1>Background-image: repeating-radial-gradient   </h1>
+    <div class="img-bg-rep-rad-grad"></div>
+
+    <h1>Background-image: repeating-radial-gradient   </h1>
+    <div class="img-bg-rep-lin-grad"></div>
+
+    <hr>
+
+    <h1>Body-Attachment Samples</h1>
+    <h1>Background-attacment: fixed   </h1>
+    <div class="fixed img-bg-web">
+        <div class="expand"></div>
+    </div>
+
+    <h1>Background-attacment: scroll   </h1>
+    <div class="scroll img-bg-web">
+            <div class="expand"></div>
+    </div>
+
+    <h1>Background-attacment: local   </h1>
+    <div class="local img-bg-web">
+            <div class="expand"></div>
+    </div>
+
+    <hr>
+    <h1>bacground-clip</h1>
+    <h1>Background-clip: border-box</h1>
+    <div class="bg-clip-bb img-bg-web"></div>
+
+    <h1>Background-clip: padding-box</h1>
+    <div class="bg-clip-pb img-bg-web"></div>
+
+    <h1>Background-clip: content-box</h1>
+    <div class="bg-clip-cb img-bg-web">
+    </div>
+
+    <h1>Background-clip: content-box with color</h1>
+    <div class="bg-clip-cb bg-blue">
+    </div>
+
+    <hr>
+    <h1>bacground-origin</h1>
+    <h1>Background-origin: border-box</h1>
+    <div class="bg-origin-bb img-bg-web"></div>
+
+    <h1>Background-origin: padding-box</h1>
+    <div class="bg-origin-pb img-bg-web"></div>
+
+    <h1>Background-origin: content-box</h1>
+    <div class="bg-origin-cb img-bg-web">
+    </div>
+
+    <h1>Background-origin: content-box with color</h1>
+    <div class="bg-origin-cb bg-blue">
+    </div>
+
+    <hr>
+    <h1>Background-repeat: repeat</h1>
+    <div class="bg-rp-rp img-bg-web">
+    </div>
+
+    <h1>Background-repeat: repeat-x</h1>
+    <div class="bg-rp-rp-x img-bg-web">
+    </div>
+    
+    <h1>Background-repeat: repeat-y</h1>
+    <div class="bg-rp-rp-y img-bg-web">
+    </div>
+
+    <h1>Background-repeat: space</h1>
+    <div class="bg-rp-space img-bg-web">
+    </div>
+
+    <h1>Background-repeat: round</h1>
+    <div class="bg-rp-round img-bg-web">
+    </div>
+
+    <hr>
+
+    <h1>Background-position: direction </h1>
+    <div class="bg-ps-dr img-bg-web">
+    </div>
+    
+    <h1>Background-position: percentages </h1>
+    <div class="bg-ps-ps img-bg-web">
+    </div>
+
+    <h1>Background-position: px </h1>
+    <div class="bg-ps-px img-bg-web">
+    </div>
+
+    <hr>
+    <h1>Background Bonus </h1>
+    <div class="bg-bonus">
+    </div>
+
+    <hr>
+
+    <h1>Background-size: px </h1>
+    <div class="bg-sz-auto img-bg-web">
+    </div>
+
+    <h1>Background-size: width height </h1>
+    <div class="bg-sz-wh img-bg-web">
+    </div>
+
+    <h1>Background-size:  percentages </h1>
+    <div class="bg-sz-pc img-bg-web">
+    </div>
+
+    <h1>Background-size:  cover </h1>
+    <div class="bg-sz-cvr img-bg-web">
+    </div>
+
+    <h1>Background-size:  contain </h1>
+    <div class="bg-sz-cnt img-bg-web">
+    </div>
+
+    <h1>Background: * </h1>
+    <div class="bg-together">
+    </div>
+
+</body>
+</html>
