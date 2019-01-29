@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pseudo Classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style rel="stylesheet" type="text/css">
+    
+
+   .button{
+        width: 40%;
+       height: 100px;
+       margin-left: 30%;
+       margin-top: 10px;
+       border: solid gray 1px;
+       border-radius: 5px;
+       text-align: center;
+       border: blue;
+       background-color: aqua;
+       margin-top: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 30px;
+       text-decoration: none;
+       transition:  2s;
+   }
+
+   .button::before{
+       content: 'Come here ';
+   }
+
+  
+   
+   .button:hover::before{
+       content: 'You hovered ';
+   }
+
+   .button:hover::after{
+       content: 'Try click also ';
+   }
+
+   .button:active{
+       background-color: rgb(244, 167, 65);
+       margin-top: 40px;
+       color: white;
+       content: 'Cool :)';
+   }
+
+   .button:active::before{
+       content: 'cool '
+   }
+   .button:active::after{
+       content: ''
+   }
+
+   .button:first-child{
+       color: white;
+   }
+
+   a:first-of-type{
+       color: white;
+   }
+
+   .button:last-child{
+   color:white;
+   }
+
+   .button:last-of-type{
+       color: blue;
+   }
+
+   
+
+   .button:not(a){
+       color:green;
+   }
+
+    .button:hover{
+       background-color: antiquewhite;
+       font-size: 40px;
+       color: aqua;
+       transform: rotate3d(1,1,1, 160deg);
+   }
+
+    
+    </style>
+</head>
+<body>
+    
+    <div class="button">
+        :)
+    </div>
+
+    <a href='/' class="button">
+        :)
+    </a>
+
+    <div class="button">
+            :)
+    </div>
+
+    <div class="button">
+            :)
+    </div>
+
+    <a href='/' class="button">
+        :)
+    </a>
+
+    <div class="button">
+            :)
+    </div>
+    
+</body>
+</html>
